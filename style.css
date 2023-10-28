@@ -9,8 +9,12 @@ html, body{
     align-items: center;
     height: 100%;
     width: 100%;
-    background-color: black;
-    color: white;
+    background-image: url(bg4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+    color: rgb(0, 0, 0);
     font-family: "gilroy";
 }
 
@@ -31,26 +35,28 @@ html, body{
     align-items: center;
     height: 60px;
     width: 100%;
-    background-color: rgba(128, 128, 128, 0.586);
+    background-color: rgb(0, 0, 0);
 }
 
 .nav h1{
     font-size: 25px;
+    color: white;
     text-transform:capitalize;
 }
 
 .card{
     width: 90%;
     height: fit-content;
-    background-color: rgb(0, 0, 0);
-    border: 2px solid rgb(255, 255, 255);
+    backdrop-filter: blur(3px);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 10px;
     overflow: hidden;
 }
 
 .card img{
     width: 100%;
-    border-bottom: 2px solid rgb(255, 255, 255) ;
+    border-bottom: 2px solid rgb(0, 0, 0) ;
+    /* opacity: .5; */
 }
 
 .des{
@@ -58,13 +64,23 @@ html, body{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    color: white;
+}
+
+.des1 h5{
+    font-family:'Lucida Sans';
+    color: rgb(65, 245, 116);
+    font-size: 12px;
+
 }
 
 .des a{
     color: rgb(0, 0, 0);
     text-decoration: none;
-    background-color: rgb(255, 255, 255);
-    padding: 5px 20px;
-    font-size: 12px;
-    border-radius: 100px;
+    font-family: 'gilroy';
+    background-color: rgb(161, 161, 161);
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid black;
 }
